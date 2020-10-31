@@ -12,6 +12,10 @@ p {
   padding: 0;
 }
 
+.hide {
+  display: none !important;
+}
+
 /* containers */
 .instructions,
 .game,
