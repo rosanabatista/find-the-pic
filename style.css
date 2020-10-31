@@ -1,0 +1,115 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+}
+
+h1,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+/* containers */
+.instructions,
+.game,
+.game-over {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+}
+
+/* instructions */
+
+.instructions {
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.instructions h1 {
+  flex: 1;
+  background-color: blue;
+}
+
+.instructions p {
+  flex: 4;
+  background-color: aqua;
+}
+
+.instructions a {
+  flex: 1;
+  background-color: pink;
+}
+
+/* game */
+
+.game {
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.game header {
+  flex: 1;
+  background-color: blue;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.game .board {
+  flex: 4;
+  background-color: aqua;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.game .board a {
+  background-color: black;
+  color: aliceblue;
+  /* display: block; */
+  width: 5rem;
+  height: 5rem;
+}
+
+.game .word {
+  flex: 1;
+  background-color: pink;
+}
+
+/* game over */
+
+.game-over {
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.game-over h1 {
+  flex: 1;
+  background-color: blue;
+}
+
+.game-over .total-score {
+  flex: 4;
+  background-color: aqua;
+}
+
+.game-over a {
+  flex: 1;
+  background-color: pink;
+}
