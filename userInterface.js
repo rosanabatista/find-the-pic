@@ -33,7 +33,10 @@ const userInterface = {
 
     const itemLink = document.createElement("a");
     itemLink.setAttribute("href", "#");
+    itemLink.setAttribute("class", icon.color);
+
     itemLink.onclick = handleScore;
+    itemLink.setAttribute("data-id", icon.id());
 
     const itemIcon = document.createElement("i");
     itemIcon.setAttribute("class", icon.css);
@@ -46,5 +49,9 @@ const userInterface = {
   clearBoard: function () {
     const icons = document.querySelectorAll(".board-item");
     icons.forEach((icon) => icon.remove());
+  },
+
+  printWord(word) {
+    document.querySelector(".word").innerHTML = word;
   },
 };

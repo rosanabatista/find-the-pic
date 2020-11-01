@@ -76,6 +76,7 @@ p {
   width: 3rem;
   height: 3rem;
   margin: 0.1rem;
+  display: block;
 }
 
 /* game over */
@@ -86,4 +87,16 @@ p {
   align-items: stretch;
   flex-wrap: wrap;
   text-align: center;
+}
+
+.blue {
+  color: blue;
+}
+
+.red {
+  color: red;
+}
+
+.yellow {
+  color: yellow;
 }

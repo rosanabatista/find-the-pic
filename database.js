@@ -12,3 +12,5 @@ const icons = [
     css: "fab fa-github",
   },
 ];
+
+const colors = ["red", "blue", "yellow"];
