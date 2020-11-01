@@ -97,6 +97,29 @@ p {
   color: red;
 }
 
-.yellow {
-  color: yellow;
+.green {
+  color: green;
+}
+
+.pink {
+  color: palevioletred;
+}
+
+.xs {
+  font-size: 1rem;
+}
+.small {
+  font-size: 1.5rem;
+}
+
+.mid {
+  font-size: 2rem;
+}
+
+.big {
+  font-size: 2.5rem;
+}
+
+.xl {
+  font-size: 3rem;
 }

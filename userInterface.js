@@ -33,7 +33,8 @@ const userInterface = {
 
     const itemLink = document.createElement("a");
     itemLink.setAttribute("href", "#");
-    itemLink.setAttribute("class", icon.color);
+    itemLink.classList.add(icon.color);
+    itemLink.classList.add(icon.size);
 
     itemLink.onclick = handleScore;
     itemLink.setAttribute("data-id", icon.id());

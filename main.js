@@ -8,7 +8,7 @@ const handleStartGame = function (event) {
     //checks if the game started, prevents double start of the game if the space is pressed
     return;
   }
-  game = new Game(maxGameTime, icons, colors);
+  game = new Game(maxGameTime, iconDatabase, colorDatabase, sizeDatabase);
   game.start();
 };
 

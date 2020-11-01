@@ -1,4 +1,8 @@
-const icons = [
+const colorDatabase = ["red", "blue", "green", "pink"];
+
+const sizeDatabase = ["xs", "small", "mid", "big", "xl"];
+
+const iconDatabase = [
   {
     name: "user",
     css: "fas fa-user",
@@ -12,5 +16,3 @@ const icons = [
     css: "fab fa-github",
   },
 ];
-
-const colors = ["red", "blue", "yellow"];

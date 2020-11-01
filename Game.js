@@ -1,10 +1,10 @@
 class Game {
-  constructor(maxGameTime, icons, colors) {
+  constructor(maxGameTime, iconDatabase, colorDatabase, sizeDatabase) {
     this.isPlaying = false;
     this.remainingTime = maxGameTime;
     this.score = 0;
     this.timer = null;
-    this.icons = this.shuffleArray(icons, colors);
+    this.icons = this.shuffleArray(iconDatabase, colorDatabase, sizeDatabase);
     this.selectedIndexes = [];
   }
 
@@ -14,7 +14,7 @@ class Game {
     userInterface.printRemainingTime(this.remainingTime);
     userInterface.printScore(this.score);
     userInterface.clearBoard();
-    console.log(this.icons);
+
     for (let i = 0; i < this.icons.length; i++) {
       userInterface.createIcon(this.icons[i]);
     }
@@ -58,14 +58,22 @@ class Game {
     this.selectedIndexes.push(index);
   }
 
-  shuffleArray(arr, colors) {
-    return arr
+  shuffleArray(arr, colors, sizes) {
+    const randomArray = arr
       .map((a) => [Math.random(), a])
       .sort((a, b) => a[0] - b[0])
-      .map((a) => a[1])
-      .map((a) => {
-        const index = Math.floor(Math.random() * colors.length);
-        return new Icon(a.name, colors[index], a.css);
-      });
+      .map((a) => a[1]);
+    const iconArray = randomArray.map((item) => {
+      const colorIndex = Math.floor(Math.random() * colors.length);
+      const sizeIndex = Math.floor(Math.random() * sizes.length);
+      const icon = new Icon(
+        item.name,
+        colors[colorIndex],
+        item.css,
+        sizes[sizeIndex]
+      );
+      return icon;
+    });
+    return iconArray;
   }
 }
