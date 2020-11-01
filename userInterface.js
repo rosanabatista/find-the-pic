@@ -36,7 +36,7 @@ const userInterface = {
     itemLink.onclick = handleScore;
 
     const itemIcon = document.createElement("i");
-    itemIcon.setAttribute("class", "fas fa-user");
+    itemIcon.setAttribute("class", icon.css);
 
     itemLink.appendChild(itemIcon);
     boardItemDiv.appendChild(itemLink);
