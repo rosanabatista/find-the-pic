@@ -41,6 +41,7 @@ const userInterface = {
 
     const itemIcon = document.createElement("i");
     itemIcon.setAttribute("class", icon.css);
+    itemIcon.classList.add(icon.rotation);
 
     itemLink.appendChild(itemIcon);
     boardItemDiv.appendChild(itemLink);

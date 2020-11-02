@@ -106,32 +106,63 @@ p {
 }
 
 .xs {
-  font-size: 1rem;
-}
-.small {
   font-size: 1.5rem;
 }
-
-.mid {
+.small {
   font-size: 2rem;
 }
 
-.big {
+.mid {
   font-size: 2.5rem;
+}
+
+.big {
+  font-size: 2.8rem;
 }
 
 .xl {
   font-size: 3rem;
 }
 
-/* .rotate-90 {
-  transform: rotate(90deg);
+.rotate-20 {
+  transform: rotate(20deg);
 }
 
-.rotate-180 {
-  transform: rotate(180deg);
+.rotate-40 {
+  transform: rotate(40deg);
 }
 
-.rotate-270 {
-  transform: rotate(270deg);
-} */
+.rotate-60 {
+  transform: rotate(60deg);
+}
+
+.rotate-80 {
+  transform: rotate(80deg);
+}
+
+.rotate-100 {
+  transform: rotate(100deg);
+}
+
+.rotate-120 {
+  transform: rotate(120deg);
+}
+
+.rotate-140 {
+  transform: rotate(140deg);
+}
+.rotate-160 {
+  transform: rotate(160deg);
+}
+
+.rotate-240 {
+  transform: rotate(240deg);
+}
+
+.rotate-260 {
+  transform: rotate(260deg);
+}
+
+.rotate-280 {
+  transform: rotate(280deg);
+}
