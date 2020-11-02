@@ -42,6 +42,7 @@ const userInterface = {
     const itemIcon = document.createElement("i");
     itemIcon.setAttribute("class", icon.css);
     itemIcon.classList.add(icon.rotation);
+    // itemIcon.classList.add("fa-fw");
 
     itemLink.appendChild(itemIcon);
     boardItemDiv.appendChild(itemLink);

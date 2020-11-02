@@ -1,6 +1,6 @@
-const colorDatabase = ["red", "blue", "green", "pink"];
+const colorDatabase = ["pink", "blue", "green", "yellow"];
 
-const sizeDatabase = ["xs", "small", "mid", "big", "xl"];
+const sizeDatabase = ["xs", "small", "mid", "big"];
 
 const rotateDatabase = [
   "rotate-20",
