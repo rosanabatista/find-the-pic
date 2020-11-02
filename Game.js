@@ -1,10 +1,21 @@
 class Game {
-  constructor(maxGameTime, iconDatabase, colorDatabase, sizeDatabase) {
+  constructor(
+    maxGameTime,
+    iconDatabase,
+    colorDatabase,
+    sizeDatabase,
+    rotateDatabase
+  ) {
     this.isPlaying = false;
     this.remainingTime = maxGameTime;
     this.score = 0;
     this.timer = null;
-    this.icons = this.shuffleArray(iconDatabase, colorDatabase, sizeDatabase);
+    this.icons = this.shuffleArray(
+      iconDatabase,
+      colorDatabase,
+      sizeDatabase,
+      rotateDatabase
+    );
     this.selectedIndexes = [];
   }
 
@@ -58,7 +69,7 @@ class Game {
     this.selectedIndexes.push(index);
   }
 
-  shuffleArray(arr, colors, sizes) {
+  shuffleArray(arr, colors, sizes, rotation) {
     const randomArray = arr
       .map((a) => [Math.random(), a])
       .sort((a, b) => a[0] - b[0])
@@ -66,11 +77,13 @@ class Game {
     const iconArray = randomArray.map((item) => {
       const colorIndex = Math.floor(Math.random() * colors.length);
       const sizeIndex = Math.floor(Math.random() * sizes.length);
+      const rotationIndex = Math.floor(Math.random() * rotation.length);
       const icon = new Icon(
         item.name,
         colors[colorIndex],
         item.css,
-        sizes[sizeIndex]
+        sizes[sizeIndex],
+        rotation[rotationIndex]
       );
       return icon;
     });

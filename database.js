@@ -2,6 +2,8 @@ const colorDatabase = ["red", "blue", "green", "pink"];
 
 const sizeDatabase = ["xs", "small", "mid", "big", "xl"];
 
+const rotateDatabase = ["fa-rotate-90", "fa-rotate-180", "fa-rotate-270"];
+
 const iconDatabase = [
   {
     name: "cat",
