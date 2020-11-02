@@ -1,4 +1,4 @@
-const maxGameTime = 120;
+const maxGameTime = 200;
 let game = null;
 
 // add logic to start the game
@@ -54,5 +54,5 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
   document.querySelector(".quit a").onclick = handleQuit;
-  document.querySelector(".home a").onclick = backHome;
+  document.querySelector(".home").onclick = backHome;
 });

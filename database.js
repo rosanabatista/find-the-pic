@@ -17,46 +17,46 @@ const rotateDatabase = [
 ];
 
 const iconDatabase = [
-  {
-    name: "cat",
-    css: "fas fa-cat",
-  },
-  {
-    name: "air freshener",
-    css: "fas fa-air-freshener",
-  },
-  {
-    name: "dog",
-    css: "fas fa-dog",
-  },
-  {
-    name: "spider",
-    css: "fas fa-spider",
-  },
-  {
-    name: "fish",
-    css: "fas fa-fish",
-  },
-  {
-    name: "arrow",
-    css: "fas fa-arrow-right",
-  },
-  {
-    name: "baby",
-    css: "fas fa-baby",
-  },
-  {
-    name: "battery",
-    css: "fas fa-battery-full",
-  },
-  {
-    name: "bomb",
-    css: "fas fa-bomb",
-  },
-  {
-    name: "bowling ball",
-    css: "fas fa-bowling-ball",
-  },
+  // {
+  //   name: "cat",
+  //   css: "fas fa-cat",
+  // },
+  // {
+  //   name: "air freshener",
+  //   css: "fas fa-air-freshener",
+  // },
+  // {
+  //   name: "dog",
+  //   css: "fas fa-dog",
+  // },
+  // {
+  //   name: "spider",
+  //   css: "fas fa-spider",
+  // },
+  // {
+  //   name: "fish",
+  //   css: "fas fa-fish",
+  // },
+  // {
+  //   name: "arrow",
+  //   css: "fas fa-arrow-right",
+  // },
+  // {
+  //   name: "baby",
+  //   css: "fas fa-baby",
+  // },
+  // {
+  //   name: "battery",
+  //   css: "fas fa-battery-full",
+  // },
+  // {
+  //   name: "bomb",
+  //   css: "fas fa-bomb",
+  // },
+  // {
+  //   name: "bowling ball",
+  //   css: "fas fa-bowling-ball",
+  // },
   {
     name: "bus",
     css: "fas fa-bus",
