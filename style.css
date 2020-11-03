@@ -169,7 +169,7 @@ h1 {
 }
 
 .game header {
-  justify-content: space-evenly;
+  justify-content: space-around;
   flex-direction: column;
 }
 

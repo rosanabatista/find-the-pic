@@ -1,4 +1,4 @@
-const maxGameTime = 120;
+const maxGameTime = 240;
 let game = null;
 
 // add logic to start the game
