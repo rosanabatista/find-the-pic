@@ -162,7 +162,7 @@ const i18n = {
     map: "mapa",
     microphone: "microfone",
     moon: "lua",
-    "paint roller": "rolo de pintar",
+    "paint roller": "rolo de pintura",
     paperclip: "clipe de papel",
     pencil: "lápis",
     phone: "telefone",
