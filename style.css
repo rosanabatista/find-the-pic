@@ -7,13 +7,11 @@ light gray - #F1F4FA
 :root {
   --font-color: #424242;
   --bg-color: #f1f4fa;
-  --heading-color: #292922;
 }
 
 [data-theme="dark"] {
   --font-color: #e1e1ff;
   --bg-color: #161625;
-  --heading-color: #818cab;
 }
 /*slider switch css */
 .theme-switch-wrapper {
@@ -169,7 +167,7 @@ h1 {
 }
 
 .game header {
-  justify-content: space-around;
+  justify-content: space-evenly;
   flex-direction: column;
 }
 
@@ -230,7 +228,7 @@ h1 {
 
 .word-cont {
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: center;
 }
 
 .word {
@@ -240,7 +238,8 @@ h1 {
   border-radius: 30px;
   font-weight: 200;
   text-transform: capitalize;
-  width: 100px;
+  width: 150px;
+  margin-bottom: 20px;
 }
 
 .langWrap {
@@ -252,11 +251,10 @@ h1 {
   margin: 10px;
   text-decoration: none;
   font-weight: 200;
-  padding: 20px;
   background-color: #e909b6;
   padding: 10px;
   border-radius: 30px;
-  width: 100px;
+  width: 120px;
 }
 
 /* game over */
@@ -297,6 +295,7 @@ h1 {
   color: white;
   font-weight: 200;
   margin-bottom: 20px;
+  width: 300px;
 }
 
 .home {
@@ -306,6 +305,7 @@ h1 {
   text-decoration: none;
   color: white;
   font-weight: 200;
+  width: 200px;
 }
 
 /* DOM */
