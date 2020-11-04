@@ -35,7 +35,7 @@
     </div>
     <div class="game hide">
         <header class="s-1 align-center">
-            <div class="time">Timer: <span></span></div>
+            <div class="time"><span></span></div>
             <div class="score">Score: <span></span></div>
             <div class="quit">
                 <a href="#">Quit</a>
@@ -43,9 +43,12 @@
         </header>
         <div class="s-4 align-center board">
         </div>
-
         <div class="s-1 align-center word-cont">
             <div class="word"></div>
+            <div class="langWrap">
+                <a href="#" language="english" class="active">english</a>
+                <a href="#" language="portugues">portugues</a>
+            </div>
         </div>
     </div>
     <div class="game-over hide">
@@ -69,6 +72,7 @@
     <script src="userInterface.js"></script>
     <script src="Game.js"></script>
     <script src="main.js"></script>
+    <script src="translation.js"></script>
     <script defer src="font-awesome/js/all.js"></script>
     <script defer src="font-awesome/css/all.css"></script>
     <!-- <script defer src="font-awesome/css/all.css"></script> -->

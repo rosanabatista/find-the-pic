@@ -43,7 +43,6 @@ const userInterface = {
     const itemIcon = document.createElement("i");
     itemIcon.setAttribute("class", icon.css);
     itemIcon.classList.add(icon.rotation);
-    // itemIcon.classList.add("fa-fw");
 
     itemLink.appendChild(itemIcon);
     boardItemDiv.appendChild(itemLink);
@@ -56,7 +55,14 @@ const userInterface = {
   },
 
   printWord(word) {
-    document.querySelector(".word").innerHTML = word;
+    //get the active language
+    const language = document
+      .querySelector(".langWrap .active")
+      .getAttribute("language");
+    //translate word
+    const translatedWord = i18n[language][word];
+    //ouput to html
+    document.querySelector(".word").innerHTML = translatedWord;
   },
 
   convertSeconds(value) {

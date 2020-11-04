@@ -80,4 +80,17 @@ document.addEventListener("DOMContentLoaded", function () {
   });
   document.querySelector(".quit a").onclick = handleQuit;
   document.querySelector(".home").onclick = backHome;
+
+  // activate switch language
+  const langEl = document.querySelector(".langWrap");
+  const link = document.querySelectorAll(".langWrap a");
+
+  link.forEach((el) => {
+    el.addEventListener("click", (event) => {
+      event.preventDefault();
+      langEl.querySelector(".active").classList.remove("active");
+      event.target.classList.add("active");
+      userInterface.printWord(game.activeIcon.name);
+    });
+  });
 });

@@ -219,6 +219,11 @@ h1 {
   margin: 0.1rem;
 }
 
+.board-item a {
+  display: contents;
+  /* font-size: 24px; */
+}
+
 .board-item + .board-item {
   margin: 5px;
 }
