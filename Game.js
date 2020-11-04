@@ -49,6 +49,9 @@ class Game {
   }
 
   addScore(clickedId) {
+    if (clickedId !== this.activeIcon.id()) {
+      this.remainingTime -= 5;
+    }
     if (clickedId === this.activeIcon.id()) {
       this.score += 100;
       userInterface.printScore(this.score);
