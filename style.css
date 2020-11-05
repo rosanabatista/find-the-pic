@@ -427,6 +427,7 @@ h1 {
 }
 
 @media only screen and (max-width: 600px) {
+  html,
   body {
     overflow: scroll;
   }
@@ -475,8 +476,5 @@ h1 {
   }
   .langWrap a {
     margin: auto;
-  }
-
-  .over-footer {
   }
 }
