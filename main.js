@@ -25,7 +25,7 @@ const handleScore = function (event) {
   // In order to get the A tag, we need to go though it's parents and get the first A tag.
   // We can use the path attribute to find this information. We filter all A elements and
   // get the first one from the array. This is the element we are looking for.
-  const clickedItem = event.path.filter((item) => item.localName === "a")[0];
+  const clickedItem = event.target.closest("a");
 
   game.addScore(clickedItem);
 };
