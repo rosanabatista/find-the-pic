@@ -283,6 +283,15 @@ h1 {
   color: #159034;
 }
 
+.scores {
+  flex-direction: column;
+}
+
+.high-score {
+  margin-top: 20px;
+  font-weight: 200;
+}
+
 .over-footer {
   display: flex;
   flex-direction: column;

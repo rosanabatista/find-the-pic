@@ -38,11 +38,6 @@ class Game {
     clearInterval(this.timer);
     this.isPlaying = false;
     userInterface.printScore(this.score);
-    if (localStorage.getItem(localStorageName) == null) {
-      highScore = 0;
-    } else {
-      highScore = localStorage.getItem(localStorageName);
-    }
   }
 
   isGameOver() {

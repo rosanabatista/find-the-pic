@@ -25,7 +25,8 @@ const userInterface = {
   printScore: function (score) {
     document.querySelector(".score span").innerHTML = score;
     document.querySelector(".total-score").innerHTML = score;
-    var highscore = localStorage.getItem("highscore");
+
+    const highscore = localStorage.getItem("highscore");
 
     if (highscore !== null) {
       if (score > highscore) {
