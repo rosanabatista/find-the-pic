@@ -25,6 +25,16 @@ const userInterface = {
   printScore: function (score) {
     document.querySelector(".score span").innerHTML = score;
     document.querySelector(".total-score").innerHTML = score;
+    var highscore = localStorage.getItem("highscore");
+
+    if (highscore !== null) {
+      if (score > highscore) {
+        localStorage.setItem("highscore", score);
+      }
+    } else {
+      localStorage.setItem("highscore", score);
+    }
+    document.querySelector(".high-score span").innerHTML = highscore;
   },
 
   createIcon: function (icon) {
@@ -64,6 +74,12 @@ const userInterface = {
     //ouput to html
     document.querySelector(".word").innerHTML = translatedWord;
   },
+
+  // printHigherScore(score) {
+  //   document.querySelector(".high-score span").innerHTML = game.highScore(
+  //     score
+  //   );
+  // },
 
   convertSeconds(value) {
     const sec = parseInt(value, 10); // convert value to number if it's string

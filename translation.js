@@ -69,7 +69,7 @@ const i18n = {
     paperclip: "paperclip",
     pencil: "pencil",
     phone: "phone",
-    plane: "plane",
+    plane: "airplane",
     fish: "fish",
     road: "road",
     robot: "robot",
@@ -100,6 +100,7 @@ const i18n = {
 
   portugues: {
     bomb: "bomba",
+    box: "caixa",
     bus: "ônibus",
     cloud: "nuvem",
     "bowling ball": "bola de boliche",
@@ -131,7 +132,7 @@ const i18n = {
     chess: "xadrez",
     clock: "relógio",
     cocktail: "coquetel",
-    compass: "compasso",
+    compass: "bússola",
     crown: "coroa",
     scissors: "tesoura",
     dice: "dado",

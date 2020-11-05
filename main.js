@@ -34,7 +34,6 @@ const handleScore = function (event) {
 const handleQuit = function (event) {
   event.preventDefault();
   game.gameOver();
-  userInterface.showInstructions();
 };
 
 const backHome = function (event) {
