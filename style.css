@@ -25,7 +25,6 @@ light gray - #F1F4FA
   height: 34px;
   position: relative;
   width: 60px;
-  margin-right: 10px;
 }
 
 .theme-switch input {
@@ -33,7 +32,7 @@ light gray - #F1F4FA
 }
 
 .slider {
-  background-color: #ccc;
+  background-color: #e909b6;
   bottom: 0;
   cursor: pointer;
   left: 0;
@@ -78,7 +77,6 @@ body {
   overflow: hidden;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  /* background-color: #eaebee; */
   background-color: var(--bg-color);
   color: var(--font-color);
 }
@@ -89,10 +87,6 @@ body {
 
 .s-1 {
   flex: 1;
-}
-
-.s-4 {
-  flex: 2;
 }
 
 .align-center {
@@ -116,8 +110,6 @@ body {
 
 .instructions {
   flex-direction: column;
-  justify-content: center;
-  align-items: stretch;
   flex-wrap: wrap;
   text-align: center;
 }
@@ -138,7 +130,6 @@ p {
 h1 {
   font-size: 70px;
   font-weight: 100;
-  /* color: var(--heading-color); */
 }
 
 .find-the-pic {
@@ -160,15 +151,13 @@ h1 {
 /* game */
 
 .game {
-  flex-direction: row;
-  justify-content: center;
-  align-items: stretch;
+  flex-direction: row-reverse;
   flex-wrap: wrap;
   text-align: center;
 }
 
 .game header {
-  justify-content: space-evenly;
+  justify-content: center;
   flex-direction: column;
 }
 
@@ -176,10 +165,11 @@ h1 {
 .time,
 .score {
   color: white;
-  padding: 10px;
+  padding: 20px;
   border-radius: 30px;
   text-decoration: none;
   font-weight: 200;
+  width: 100px;
 }
 
 .quit {
@@ -188,28 +178,26 @@ h1 {
 
 .quit a {
   background-color: #0946e9;
-  width: 100px;
 }
 
 .time {
   background-color: #e9ac09;
-  width: 100px;
+  margin-bottom: 20px;
 }
 
 .score {
   background-color: #159034;
-  width: 100px;
+  margin-bottom: 20px;
 }
 
 .game .board {
-  /* padding: 1rem; */
   align-content: center;
   width: 500px;
   height: 500px;
   margin: 0 auto;
   border-radius: 50%;
-  /* overflow: hidden; */
   align-self: center;
+  flex: 2;
 }
 
 .board-item {
@@ -218,18 +206,12 @@ h1 {
   margin: 0.1rem;
 }
 
-.board-item a {
-  display: contents;
-  /* font-size: 24px; */
-}
-
 .board-item + .board-item {
   margin: 5px;
 }
 
 .word-cont {
   flex-direction: column;
-  justify-content: center;
 }
 
 .word {
@@ -296,19 +278,12 @@ h1 {
 
 .game-over {
   flex-direction: column;
-  justify-content: center;
-  align-items: stretch;
   flex-wrap: wrap;
   text-align: center;
 }
 
-.over-text {
-  justify-content: flex-start !important;
-  text-align: justify;
-}
-
-.game-over h1 {
-  color: #e909b6;
+.scores {
+  flex-direction: column;
 }
 
 .total-score {
@@ -317,17 +292,12 @@ h1 {
   color: #159034;
 }
 
-.scores {
-  flex-direction: column;
-}
-
 .high-score {
   margin-top: 20px;
   font-weight: 200;
 }
 
 .over-footer {
-  display: flex;
   flex-direction: column;
 }
 
@@ -435,30 +405,4 @@ h1 {
 
 .rotate-280 {
   transform: rotate(280deg);
-}
-
-@media (max-width: 480px) {
-  .game header {
-    display: flex;
-    flex-flow: row;
-    margin-top: 20px;
-  }
-
-  .board {
-    display: contents;
-  }
-  .board-item {
-    display: flex;
-    height: 10px;
-    justify-content: center;
-  }
-  .word-cont {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: flex-end;
-    align-items: center;
-    margin-bottom: 30px;
-    margin-top: 10px;
-  }
 }
