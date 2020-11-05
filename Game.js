@@ -17,6 +17,8 @@ class Game {
       rotateDatabase
     );
     this.selectedIndexes = [];
+    this.streakRight = 0;
+    this.bonusTimeout = null;
   }
 
   start() {
@@ -50,12 +52,24 @@ class Game {
 
   addScore(clickedId) {
     if (clickedId === this.activeIcon.id()) {
+      this.streakRight += 1;
+      if (this.streakRight % 2 === 0) {
+        this.remainingTime += 5;
+      }
+      clearTimeout(this.bonusTimeout);
+      this.bonusTimeout = setTimeout(this.timerBonus.bind(this), 5000);
       this.score += 100;
       userInterface.printScore(this.score);
       this.selectIcon();
     } else {
       this.remainingTime -= 5;
     }
+    userInterface.printRemainingTime(this.remainingTime);
+  }
+
+  timerBonus() {
+    console.log("zeroou");
+    this.streakRight = 0;
   }
 
   selectIcon() {

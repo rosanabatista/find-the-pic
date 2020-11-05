@@ -76,12 +76,6 @@ const userInterface = {
     document.querySelector(".word").innerHTML = translatedWord;
   },
 
-  // printHigherScore(score) {
-  //   document.querySelector(".high-score span").innerHTML = game.highScore(
-  //     score
-  //   );
-  // },
-
   convertSeconds(value) {
     const sec = parseInt(value, 10); // convert value to number if it's string
     let minutes = Math.floor(sec / 60); // get minutes
