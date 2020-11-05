@@ -89,4 +89,18 @@ const userInterface = {
     }
     return minutes + ":" + seconds; // Return is HH : MM : SS
   },
+
+  blinkRight(clickedItem) {
+    clickedItem.classList.add("blink-text-green");
+    setTimeout(function () {
+      clickedItem.classList.remove("blink-text-green");
+    }, 1000);
+  },
+
+  blinkWrong(clickedItem) {
+    clickedItem.classList.add("blink-text-red");
+    setTimeout(function () {
+      clickedItem.classList.remove("blink-text-red");
+    }, 1000);
+  },
 };

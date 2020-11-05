@@ -50,8 +50,10 @@ class Game {
     }
   }
 
-  addScore(clickedId) {
+  addScore(clickedItem) {
+    const clickedId = clickedItem.dataset.id;
     if (clickedId === this.activeIcon.id()) {
+      userInterface.blinkRight(clickedItem);
       this.streakRight += 1;
       if (this.streakRight % 2 === 0) {
         this.remainingTime += 5;
@@ -62,6 +64,7 @@ class Game {
       userInterface.printScore(this.score);
       this.selectIcon();
     } else {
+      userInterface.blinkWrong(clickedItem);
       this.remainingTime -= 5;
     }
     userInterface.printRemainingTime(this.remainingTime);

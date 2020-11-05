@@ -408,6 +408,24 @@ h1 {
   transform: rotate(280deg);
 }
 
+.blink-text-green {
+  animation: blinkingTextG 1s;
+}
+.blink-text-red {
+  animation: blinkingTextR 1s;
+}
+@keyframes blinkingTextG {
+  0% {
+    color: #10c018;
+  }
+}
+
+@keyframes blinkingTextR {
+  0% {
+    color: #ef0a1a;
+  }
+}
+
 @media only screen and (max-width: 600px) {
   body {
     overflow: scroll;

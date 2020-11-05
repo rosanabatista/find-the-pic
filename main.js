@@ -26,9 +26,8 @@ const handleScore = function (event) {
   // We can use the path attribute to find this information. We filter all A elements and
   // get the first one from the array. This is the element we are looking for.
   const clickedItem = event.path.filter((item) => item.localName === "a")[0];
-  const clickedId = clickedItem.dataset.id;
 
-  game.addScore(clickedId);
+  game.addScore(clickedItem);
 };
 
 const handleQuit = function (event) {
