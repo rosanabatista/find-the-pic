@@ -85,10 +85,17 @@ class Game {
   }
 
   shuffleArray(arr, colors, sizes, rotation) {
+    let maxItens = 100;
+    if (document.body.clientWidth <= 600) {
+      maxItens = 50;
+      this.remainingTime = 60;
+    }
     const randomArray = arr
       .map((a) => [Math.random(), a])
       .sort((a, b) => a[0] - b[0])
-      .map((a) => a[1]);
+      .map((a) => a[1])
+      .slice(0, maxItens);
+
     const iconArray = randomArray.map((item) => {
       const colorIndex = Math.floor(Math.random() * colors.length);
       const sizeIndex = Math.floor(Math.random() * sizes.length);

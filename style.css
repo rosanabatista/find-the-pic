@@ -407,3 +407,41 @@ h1 {
 .rotate-280 {
   transform: rotate(280deg);
 }
+
+@media only screen and (max-width: 600px) {
+  .word-cont {
+  }
+
+  .game header {
+    flex-flow: row;
+    width: 100vw;
+    align-items: baseline;
+  }
+
+  .game .board {
+    display: flex;
+    flex: auto;
+  }
+
+  .word-cont {
+    flex-flow: row;
+    align-items: flex-end;
+  }
+
+  .word {
+    margin-bottom: 0;
+  }
+  .dropdown {
+    display: flex;
+    align-items: center;
+  }
+
+  .langWrap {
+    background-color: #e909b6;
+    border-radius: 20px;
+    margin-bottom: 30px;
+  }
+  .langWrap a {
+    margin: auto;
+  }
+}
