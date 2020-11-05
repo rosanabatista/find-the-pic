@@ -99,6 +99,7 @@ const i18n = {
   },
 
   portugues: {
+    anchor: "âncora",
     bomb: "bomba",
     box: "caixa",
     bus: "ônibus",
@@ -197,6 +198,7 @@ const i18n = {
   },
 
   dutch: {
+    anchor: "anker",
     bomb: "bom",
     box: "doos",
     bus: "bus",
