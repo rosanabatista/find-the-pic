@@ -409,23 +409,34 @@ h1 {
 }
 
 @media only screen and (max-width: 600px) {
-  .word-cont {
+  .intro {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .start-button {
+    align-content: flex-start;
   }
 
   .game header {
     flex-flow: row;
     width: 100vw;
-    align-items: baseline;
+    align-items: flex-end;
+  }
+
+  .quit {
+    margin-bottom: 20px;
   }
 
   .game .board {
     display: flex;
     flex: auto;
+    align-self: flex-start;
   }
 
   .word-cont {
     flex-flow: row;
-    align-items: flex-end;
+    align-items: baseline;
   }
 
   .word {
@@ -443,5 +454,8 @@ h1 {
   }
   .langWrap a {
     margin: auto;
+  }
+
+  .over-footer {
   }
 }
