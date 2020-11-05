@@ -68,7 +68,6 @@ class Game {
   }
 
   timerBonus() {
-    console.log("zeroou");
     this.streakRight = 0;
   }
 
