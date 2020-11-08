@@ -87,7 +87,7 @@ const userInterface = {
     if (seconds < 10) {
       seconds = "0" + seconds;
     }
-    return minutes + ":" + seconds; // Return is HH : MM : SS
+    return minutes + ":" + seconds; // Return is MM : SS
   },
 
   blinkRight(clickedItem) {
