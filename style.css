@@ -437,6 +437,7 @@ h1 {
   .intro {
     display: flex;
     flex-wrap: wrap;
+    align-content: flex-end;
   }
   .theme-switch-wrapper {
     height: 100px;
