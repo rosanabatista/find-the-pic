@@ -454,7 +454,17 @@ h1 {
     display: flex;
     flex: auto;
     align-self: flex-start;
+    align-content: space-between;
+    height: 400px;
   }
+  .board-item + .board-item {
+    margin: 0;
+  }
+
+  /* .board-item {
+    width: 0;
+    margin: 0;
+  } */
 
   .word-cont {
     flex-flow: row;
@@ -476,5 +486,28 @@ h1 {
   }
   .langWrap a {
     margin: auto;
+  }
+  .xs {
+    font-size: 1rem;
+    margin: 25px;
+  }
+  .small {
+    font-size: 1rem;
+    margin: 20px;
+  }
+
+  .mid {
+    font-size: 1.5rem;
+    margin: 15px;
+  }
+
+  .big {
+    font-size: 2rem;
+    margin: 10px;
+  }
+
+  .xl {
+    font-size: 2.2rem;
+    margin: 5px;
   }
 }
