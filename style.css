@@ -431,6 +431,9 @@ h1 {
   body {
     overflow: scroll;
   }
+  h1 {
+    font-size: 50px;
+  }
   .intro {
     display: flex;
     flex-wrap: wrap;
