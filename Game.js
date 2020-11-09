@@ -90,7 +90,7 @@ class Game {
   shuffleArray(arr, colors, sizes, rotation) {
     let maxItens = 100;
     if (document.body.clientWidth <= 600) {
-      maxItens = 63;
+      maxItens = 56;
       this.remainingTime = 60;
     }
     const randomArray = arr
