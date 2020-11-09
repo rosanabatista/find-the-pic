@@ -482,16 +482,16 @@ h1 {
     margin: auto;
   }
   .xs {
-    font-size: 1rem;
+    font-size: 1.2rem;
     margin: 25px;
   }
   .small {
-    font-size: 1rem;
+    font-size: 1.4rem;
     margin: 20px;
   }
 
   .mid {
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     margin: 15px;
   }
 
@@ -501,7 +501,7 @@ h1 {
   }
 
   .xl {
-    font-size: 2.2rem;
+    font-size: 2.5rem;
     margin: 5px;
   }
 }
