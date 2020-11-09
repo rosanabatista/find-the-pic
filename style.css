@@ -435,7 +435,9 @@ h1 {
     display: flex;
     flex-wrap: wrap;
   }
-
+  .theme-switch-wrapper {
+    height: 150px;
+  }
   .start-button {
     align-content: flex-start;
   }
