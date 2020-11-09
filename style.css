@@ -460,12 +460,6 @@ h1 {
   .board-item + .board-item {
     margin: 0;
   }
-
-  /* .board-item {
-    width: 0;
-    margin: 0;
-  } */
-
   .word-cont {
     flex-flow: row;
     align-items: baseline;
